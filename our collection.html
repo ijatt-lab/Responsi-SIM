@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Collection</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #fad0c4;
+        color: #fff;
+      }
+
+      header {
+        text-align: center;
+        background: url("https://cdn1.productnation.co/stg/sites/2/5c4aed63bc7bf.jpeg") no-repeat center;
+        background-size: cover;
+        padding: 50px 20px;
+        color: white;
+      }
+
+      header h1 {
+        font-size: 48px;
+        margin: 0;
+      }
+
+      header p {
+        font-size: 18px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background: #fcc4b5;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        transition: background 0.3s ease;
+      }
+
+      nav a:hover {
+        background: #f9c2b3;
+        border-radius: 25px;
+      }
+
+      .collection-section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      .collection-section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .collection-section h2::after {
+        content: "";
+        width: 50%;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        bottom: -10px;
+        left: 25%;
+      }
+
+      .collection-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px; /* Atur tinggi gambar */
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .card-content h3 {
+        font-size: 16px;
+        margin: 0;
+        color: #333;
+      }
+
+      .card-content p {
+        font-size: 12px;
+        margin: 10px 0;
+        color: #777;
+      }
+
+      .card-content a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 16px;
+        font-size: 12px;
+        color: white;
+        background: #fcc4b5;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background 0.3s ease;
+      }
+
+      .card-content a:hover {
+        background: #f9c2b3;
+      }
+
+      /* Kelas tambahan untuk memperkecil item */
+      .small-item .card img {
+        height: 370px;
+      }
+
+      .small-item .card-content h3 {
+        font-size: 14px;
+      }
+
+      .small-item .card-content p {
+        font-size: 10px;
+      }
+
+      .small-item .card-content a {
+        padding: 5px 10px;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="our collection.html">Our Collection</a>
+      <a href="order.html">Contact</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+      <h1>Our Collection</h1>
+      <p>Explore our premium collection of jewelry and accessories.</p>
+    </header>
+
+    <!-- Collection Section -->
+    <section class="collection-section" id="collection">
+      <h2>Silahkan Berbelanja</h2>
+      <div class="collection-grid small-item">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/fd/88/43/fd88432fef42240cedfa270dc3f38c77.jpg" alt="Endless Love Circle" />
+          <div class="card-content">
+            <h3>Baju Wanita 543</h3>
+            <p>Menggunakan kain yang sangat sejuk dan tebal</p>
+            <a href="#order">Order Here</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/b3/b4/24/b3b424bfab4ea3bc0336a5007045a6fe.jpg" alt="Unity Ring" />
+          <div class="card-content">
+            <h3>Baju Wanita 152</h3>
+            <p>Menggunakan bahan yang sangat premium</p>
+            <a href="#order">Order Here</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/f5/7f/69/f57f6978cbe9d557e402350bccf655a5.jpg" alt="Unity Ring" />
+          <div class="card-content">
+            <h3>Baju Wanita 121</h3>
+            <p>Menggunakan bahan yang sangat halus dan nyaman</p>
+            <a href="#order">Order Here</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/85/cf/39/85cf395f8be4ef793cb1ac19c1775713.jpg" alt="Unity Ring" />
+          <div class="card-content">
+            <h3>Baju Wanita 521</h3>
+            <p>Menggunakan bahan yang sangat lembut</p>
+            <a href="#order">Order Here</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/52/da/d2/52dad2d7cf7142d4685bce67139ed005.jpg" alt="Unity Ring" />
+          <div class="card-content">
+            <h3>Baju Wanita 222</h3>
+            <p>Menggunakan bahan yang sangat tebal dan halus</p>
+            <a href="#order">Order Here</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/92/11/88/921188cf01e5a7ae900ac20173b3cb4a.jpg" alt="Unity Ring" />
+          <div class="card-content">
+            <h3>Baju Unisex 217</h3>
+            <p>Menggunakan bahan yang tebal dan halus</p>
+            <a href="#order">Order Here</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
